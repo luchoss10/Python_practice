@@ -1,3 +1,10 @@
+"""
+Ejercicio 09
+
+Calcula el numero de Druplos con los años y druplos indicados
+
+"""
+
 ndup = int(input('Ingrese el número de druplos: '))
 nann = int(input('Ingrese el número de años: '))
 

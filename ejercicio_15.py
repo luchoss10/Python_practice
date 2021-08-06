@@ -1,3 +1,10 @@
+"""
+Ejercicio 15
+
+Calcula el maximo de una señal y los grafica.
+
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -30,6 +37,9 @@ def maxs (v):
     return mxs
             
 
+
+#if __name__ == '__main__':
+
 signal = np.random.randn(10)
 print(signal)
 print(maxs(signal))
@@ -42,8 +52,6 @@ for i in maximos:
     index = np.where(signal == i)[0]
     max_indx.append(index[0])
 
-for i in max_indx:
-    max_graf[i] = signal[i]
-
 plt.plot(signal, '-b', max_indx, maximos, '.r')
+plt.legend(['Señal', 'Maximos']), plt.grid()
 plt.show()

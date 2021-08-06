@@ -1,3 +1,9 @@
+"""
+Ejercicio 13
+
+Calcula el factor primo del valor indicado
+
+"""
 
 num = int(float(input('Ingrese su número para la descomposición: ')))
 
